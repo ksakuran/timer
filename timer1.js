@@ -1,4 +1,4 @@
-const args = process.argv.slice(2)
+const args = process.argv.slice(2);
 const alarmClock = (array) => {
   array.forEach(element => {
     let num = Number(element);
@@ -11,7 +11,7 @@ const alarmClock = (array) => {
     }
 
     setTimeout(()=>process.stdout.write('\x07'), num * 1000);
-   } );  
-}
+  });
+};
 
 alarmClock(args);
